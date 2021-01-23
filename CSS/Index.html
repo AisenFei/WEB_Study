@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--规范，<style> 可以编写css的代码，每一个声明，最好使用分号结尾
+    语法：
+        选择器{
+            声明1;
+            声明2;
+            声明3;
+        }
+    -->
+    <!--内部样式-->
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+    <!--外部样式-->
+    <!--链接式-->
+    <link rel="stylesheet" href="CSS/前端.CSS.a.css">
+    <!--导入式-->
+    <style>
+        @import url("CSS/前端.CSS.a.css");
+    </style>
+
+</head>
+<body>
+<!--优先级：就近原则-->
+<h1>我是一个标题</h1>
+<h2>我是第二个标题</h2>
+<!--行内样式：在标签元素中，-->
+<h3 style="color: chartreuse"></h3>
+</body>
+</html>
